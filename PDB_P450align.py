@@ -1,17 +1,21 @@
 #%%
 import os
 cpass=os.getcwd()
-import jax
 import math
 import sys
-import pickle
-
-import matplotlib.pyplot as plt
 import numpy as np
-
-#---------------import-------------------
 import argparse
 import time
+
+print("------------")
+now = time.ctime()
+cnvtime = time.strptime(now)
+print(time.strftime("%Y/%m/%d %H:%M", cnvtime))
+print("Start:"+str(sys.argv))
+print("Ver.1.0_(2022_Dec.)")
+print("by Hiroki Onoda NUSR")
+print("------------")
+
 #---------------arg----------------------
 parser = argparse.ArgumentParser(description="The runner can accept arguments")
 parser.add_argument('-i', default='PDB/test.pdb', help='relative fasta path of imput sequence ; ex) fasta/test.fasta (def.)')
